@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: task-manage-volumes.html 
+keywords: manage volumes, mount command, delete volume, edit volume, edit snapshot policy 
+summary: 您可以根据存储需求的变化管理现有卷。您可以查看，编辑，还原和删除卷。 
+---
+= 管理现有卷
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以根据存储需求的变化管理现有卷。您可以查看，编辑，还原和删除卷。
+
+.步骤
+. 打开工作环境。
+. 将鼠标悬停在卷上。
++
+image:screenshot_cvs_gcp_volume_hover_menu.png["卷悬停菜单的屏幕截图，可用于执行卷任务"]
+
+. 管理卷：
++
+[cols="30,70"]
+|===
+| 任务 | Action 
+
+
+| 查看有关卷的信息 | 单击 * 信息 * 。 
+
+
+| 编辑卷（包括快照策略）  a| 
+.. 单击 * 编辑 * 。
+.. 修改卷的属性，然后单击 * 更新 * 。
+
+
+
+
+| 获取 nfs 或 smb mount 命令  a| 
+.. 单击 * 挂载卷 * 。
+.. 单击 * 复制 * 以复制命令。
+
+
+
+
+| 按需创建 Snapshot 副本  a| 
+.. 单击 * 创建 Snapshot 副本 * 。
+.. 根据需要更改名称，然后单击 * 创建 * 。
+
+
+
+
+| 将卷替换为 Snapshot 副本的内容  a| 
+.. 单击 * 将卷还原到 Snapshot* 。
+.. 选择一个 Snapshot 副本，然后单击 * 还原 * 。
+
+
+
+
+| 删除 Snapshot 副本  a| 
+.. 单击 * 删除 Snapshot 副本 * 。
+.. 选择快照并单击 * 删除 * 。
+.. 当系统提示您确认时，再次单击 * 删除 * 。
+
+
+
+
+| 删除卷  a| 
+.. 从所有客户端卸载卷：
++
+*** 在 Linux 客户端上，使用 `umount` 命令。
+*** 在 Windows 客户端上，单击 * 断开网络驱动器 * 。
+
+
+.. 选择一个卷，然后单击 * 删除 * 。
+.. 再次单击 * 删除 * 进行确认。
+
+
+|===
+

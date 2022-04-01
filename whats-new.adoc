@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes' 
+summary: 了解 Cloud Manager 中适用于 Google Cloud 的 Cloud Volumes Service 的新增功能。 
+---
+= 新增功能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解 Cloud Manager 中适用于 Google Cloud 的 Cloud Volumes Service 的新增功能。
+
+
+
+== 2020 年 9 月 9 日
+
+
+
+=== 支持适用于 Google Cloud 的 Cloud Volumes Service
+
+现在，您可以直接从 Cloud Manager 管理适用于 Google Cloud 的 Cloud Volumes Service ：
+
+* 设置和创建工作环境
+* 为 Linux 和 UNIX 客户端创建和管理 NFSv3 和 NFSv4.1 卷
+* 为 Windows 客户端创建和管理 SMB 3.x 卷
+* 创建，删除和还原卷快照
+

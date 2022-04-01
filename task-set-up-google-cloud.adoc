@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-google-cloud.html 
+keywords: setup, set up, api, service account, requirements, permissions 
+summary: Cloud Manager 需要通过 Google 云服务帐户访问 Cloud Volumes Service API 和适当的权限。 
+---
+= 设置 Google Cloud
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager 需要通过 Google 云服务帐户访问 Cloud Volumes Service API 和适当的权限。
+
+
+
+== 启用 Cloud Volumes Service API
+
+在 Google Cloud Shell 中，运行以下命令以启用 Cloud Volumes Service API ：
+
+`gcloud -project=<my-cvs-project> 服务支持 cloudvolumesgcp-api.netapp.com`
+
+
+
+== 设置服务帐户
+
+完成以下任务， Cloud Manager 才能访问您的 Google Cloud 项目：
+
+* 创建新的服务帐户
+* 将新服务帐户成员添加到项目中并为其分配特定角色（权限）
+* 为用于向 Google 进行身份验证的服务帐户创建并下载密钥对
+
+
+.步骤
+. 在 Google Cloud 控制台中， https://console.cloud.google.com/iam-admin/serviceaccounts["转到服务帐户页面"^]。
+. 单击 * 选择一个项目 * ，选择您的项目，然后单击 * 打开 * 。
+. 单击 * 创建服务帐户 * 。
+. 输入服务帐户名称（友好显示名称）和问题描述。
++
+Cloud Console 会根据此名称生成服务帐户 ID 。根据需要编辑 ID —您不能稍后更改此 ID 。
+
+. 要立即设置访问控制，请单击页面底部的 * 创建 * ，然后单击 * 完成 * ，继续执行下一步。
+. 在 _IAM 页面中，单击 * 添加 * 并填写 _ 添加成员 _ 页面中的字段：
++
+.. 在 New Members 字段中，输入完整的服务帐户 ID ，例如 user1-service-account-cvs@project1.iam.gserviceaccount.com 。
+.. 添加以下角色：
++
+*** _NetApp Cloud Volumes Admin_
+*** 计算网络查看器 _
+
+
+.. 单击 * 保存 * 。
+
+
+. 单击服务帐户名称，然后从 _Service 帐户详细信息 _ 页面中，单击 * 添加密钥 > 创建新密钥 * 。
+. 选择 * JSON* 作为密钥类型，然后单击 * 创建 * 。
++
+单击 * 创建 * 将生成新的公共 / 私有密钥对并将其下载到系统中。它是私钥的唯一副本。请安全地存储此文件，因为它可用于作为您的服务帐户进行身份验证。
+
+
+
+有关详细步骤，请参见 Google Cloud 文档：
+
+* link:https://cloud.google.com/iam/docs/creating-managing-service-accounts["创建和管理服务帐户"^]
+* link:https://cloud.google.com/iam/docs/granting-changing-revoking-access["授予，更改和撤消对资源的访问权限"^]
+* link:https://cloud.google.com/iam/docs/creating-managing-service-account-keys["创建和管理服务帐户密钥"^]
+

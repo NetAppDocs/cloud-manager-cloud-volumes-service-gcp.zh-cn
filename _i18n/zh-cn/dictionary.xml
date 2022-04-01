@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="597907fb22ffd6d5d99abe19205161d6" category="summary">按照以下步骤快速入门，或访问链接以获取完整详细信息。</block>
+  <block id="04476610d425410da3c197a32de6a851" category="doc">Cloud Volumes Service for Google Cloud 快速入门</block>
+  <block id="51854a19c4259f68487a6142b24a127b" category="paragraph">在 Google 中，启用适用于 GCP 的 Cloud Volumes Service API ，以便 Cloud Manager 可以管理订阅和云卷。</block>
+  <block id="95b3ec34634e3102d6acf0de3fc1d2fc" category="inline-link-macro">了解如何启用 API</block>
+  <block id="09343065e2ebc25d01e7ea8194218f67" category="paragraph"><block ref="9726afe0fed23e53ca72118b2c823abb" category="inline-link-macro-rx"></block>。</block>
+  <block id="b37f2372acf4547f9f0ef25572764639" category="paragraph">在 Google 中，创建服务帐户和角色，以便 Cloud Manager 可以访问您的 Cloud Volumes Service for Google Cloud 帐户。</block>
+  <block id="46b491767cd12d81f9bf9593f5a96cf7" category="inline-link-macro">了解如何设置服务帐户</block>
+  <block id="28d2901977b5fc7c248b5b66937c0876" category="paragraph"><block ref="73d99899af631bbb52840dc78039ca4d" category="inline-link-macro-rx"></block>。</block>
+  <block id="dd50973260de02b147ef0408f27d7b00" category="paragraph">在 Cloud Volumes Service 中，单击 * 添加工作环境 * &gt; * Google Cloud* &gt; * * ，然后提供有关服务帐户和 Google Cloud 项目的详细信息。</block>
+  <block id="328958ba41a282fb8b8b971eb10845bd" category="inline-link-macro">了解如何创建工作环境</block>
+  <block id="75aec57e5da1cc40dc30b7d1be476ab4" category="paragraph"><block ref="87d286565b204dd2a8d4bf83463a6fe9" category="inline-link-macro-rx"></block>。</block>
+  <block id="5876c30cdb96c38d4cc2497feffde111" category="summary">您可以为每个卷创建一个快照策略，以便可以从较早的时间恢复或还原卷的整个内容。您还可以根据需要为云卷创建按需快照。</block>
+  <block id="bf7d38473ac37a5a084d9d1f21a4002c" category="doc">管理云卷快照</block>
+  <block id="2530ad97c013f5d8d9c69004a4e7ee67" category="section-title">创建按需快照</block>
+  <block id="377828daafe235f0aafbc80626a92a44" category="paragraph">如果要创建具有当前卷状态的快照，可以为云卷创建按需快照。</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
+  <block id="6c970f68c7cf5a446d127ac3ab6d72f7" category="list-text">打开工作环境。</block>
+  <block id="bb06f880c297b34268ea12d1602837bb" category="list-text">将鼠标悬停在卷上，然后单击 * 创建快照副本 * 。</block>
+  <block id="f6abfc5070e6bcda72d651ecad906489" category="list-text">输入快照的名称或使用自动生成的名称，然后单击 * 创建 * 。</block>
+  <block id="2209a54e85463699d44111ce0c0a236a" category="inline-image-macro">选择要还原到新卷的快照副本的屏幕截图</block>
+  <block id="f989d58bb69770d84593492ff494f094" category="paragraph"><block ref="f989d58bb69770d84593492ff494f094" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6459290d6e095d59cc3f6660e9e9ba67" category="paragraph">此时将创建快照。</block>
+  <block id="e5424232e5c3cbc0b77accf10fc38470" category="section-title">创建或修改快照策略</block>
+  <block id="4fec62b4aa71f93e589147ab337d3a3a" category="paragraph">您可以根据需要为云卷创建或修改快照策略。您可以在创建卷或编辑卷时从 _Snapshot Policy_ 选项卡定义快照策略。</block>
+  <block id="e7869c8f9e6db9876598b0ae71814661" category="list-text">将鼠标悬停在卷上，然后单击 * 编辑 * 。</block>
+  <block id="13936fb1e8cab81aa5c50bc2a7991029" category="list-text">从 _Snapshot Policy_ 选项卡中，将启用快照滑块移至右侧。</block>
+  <block id="6fcb64b90c6b69153987bd2a5934500e" category="list-text">定义快照计划：</block>
+  <block id="0c8182bf573f25aa41ea1b97ef990daf" category="list-text">选择频率： * 每小时 * ， * 每日 * ， * 每周 * 或 * 每月 *</block>
+  <block id="95f0f96e7a13d18ec4b4cc683cac354a" category="list-text">选择要保留的快照数量。</block>
+  <block id="d83574476baea70ecfe273fcb08a92b1" category="list-text">选择应创建快照的日期，小时和分钟。</block>
+  <block id="23643dc2c2630e1cd190257bc60fe38e" category="inline-image-macro">已配置 Snapshot 策略的屏幕截图</block>
+  <block id="a88d31c8b3d36cada7ac3f645dbdd24b" category="paragraph"><block ref="a88d31c8b3d36cada7ac3f645dbdd24b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="559ab4c9d098436cfbf33391cfeecf7f" category="list-text">单击 * 添加卷 * 或 * 更新卷 * 以保存策略设置。</block>
+  <block id="c97414d9e21703e37b875d9f1d8dfb74" category="section-title">禁用快照策略</block>
+  <block id="f2dd955514c60fad76437ba0f7550a7f" category="paragraph">您可以禁用快照策略，以便在保留快照策略设置的同时，在短时间内停止创建快照。</block>
+  <block id="7a732251673ef876881925c7f8facaa0" category="list-text">从 _Snapshot Policy_ 选项卡中，将启用快照滑块移至左侧。</block>
+  <block id="39e4d7ad6415acefc633ce23184ef5d5" category="inline-image-macro">处于禁用位置的 Snapshot 策略按钮的屏幕截图</block>
+  <block id="bcbed048badd671015bc9a700a9ee184" category="paragraph"><block ref="bcbed048badd671015bc9a700a9ee184" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fc220eb1d5572bf36eac03104db8fd04" category="list-text">单击 * 更新卷 * 。</block>
+  <block id="0932c32fdddde924b270a62a2ae2cd0e" category="paragraph">要重新启用快照策略，请将启用快照滑块移至右侧，然后单击 * 更新卷 * 。</block>
+  <block id="efb44cfe1d5b8d9954ea045385675c66" category="section-title">删除快照</block>
+  <block id="01270341151a1d822c548abc778b27ea" category="paragraph">您可以删除不再需要的快照。</block>
+  <block id="7552d0e963760ace00d752fb123989a3" category="list-text">将鼠标悬停在卷上，然后单击 * 删除 Snapshot 副本 * 。</block>
+  <block id="b8d7a446f6dbe49089b4c415dc2e8037" category="list-text">从下拉列表中选择快照，然后单击 * 删除 * 。</block>
+  <block id="9c673ecd9d0dddf896cc55f2127056d8" category="inline-image-macro">选择要删除的快照副本的屏幕截图</block>
+  <block id="41a98f64ec73ced976239a7861d67e1c" category="paragraph"><block ref="41a98f64ec73ced976239a7861d67e1c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1899e67aa8aec45bef5dc600fc2ae14" category="list-text">在确认对话框中，单击 * 删除 * 。</block>
+  <block id="873e0406fa26efb41adbaa13d68a75aa" category="section-title">将快照还原到新卷</block>
+  <block id="3d1f395f071b82aa2483997ed6a950f4" category="paragraph">您可以根据需要将快照还原到新卷。</block>
+  <block id="4610617cfe3d68ad951e3cbe5838d48f" category="list-text">将鼠标悬停在卷上，然后单击 * 还原到新卷 * 。</block>
+  <block id="f00381a2986fdab955681fe6c60ce7ed" category="list-text">从下拉列表中选择要用于创建新卷的快照。</block>
+  <block id="a5e417c4429a4d261016484925d60eed" category="list-text">输入新卷的名称，然后单击 * 还原 * 。</block>
+  <block id="12fac297323644da3ff2e0153eeb71e2" category="paragraph"><block ref="12fac297323644da3ff2e0153eeb71e2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ca4c6ba75b4d9ae132e9e540b993e8c8" category="paragraph">卷在工作环境中创建。</block>
+  <block id="318099df58f11dc94302fadee00fb7b2" category="list-text">如果需要更改任何卷属性，例如卷路径或服务级别：</block>
+  <block id="2c55e8dc4183c50c0009f5d04bc6a083" category="list-text">进行更改并单击 * 更新卷 * 。</block>
+  <block id="ff74d9d1d3fca1c7a3ef1f4d83f84caa" category="inline-link-macro">挂载云卷</block>
+  <block id="f4b43cd0d32ccc6ae1ae7fd55ec60faf" category="paragraph">继续 <block ref="711ebf19377f2c6ac55625f313ee444a" category="inline-link-macro-rx"></block>。</block>
+  <block id="a8867a21a7fa1494ec13e3530d19b978" category="summary">Cloud Manager 需要通过 Google 云服务帐户访问 Cloud Volumes Service API 和适当的权限。</block>
+  <block id="40b96cc305f26bed96812c2920065f5d" category="doc">设置 Google Cloud</block>
+  <block id="c0d5abaa52a2adc8b50cf6748143a972" category="section-title">启用 Cloud Volumes Service API</block>
+  <block id="db680318754971180f12e167ae5f6325" category="paragraph">在 Google Cloud Shell 中，运行以下命令以启用 Cloud Volumes Service API ：</block>
+  <block id="c4c67ba5b51827067dc9257fb3040a30" category="paragraph">`gcloud -project=&lt;my-cvs-project&gt; 服务支持 cloudvolumesgcp-api.netapp.com`</block>
+  <block id="ec8725380aa2f688c9b9d45557c44600" category="section-title">设置服务帐户</block>
+  <block id="91066c1fc41c9558d9b205e32bcfb6ad" category="paragraph">完成以下任务， Cloud Manager 才能访问您的 Google Cloud 项目：</block>
+  <block id="cb939d621f46e6895da8fb3a52fbcf83" category="list-text">创建新的服务帐户</block>
+  <block id="172cabf35e2da2e485725633d4544c4b" category="list-text">将新服务帐户成员添加到项目中并为其分配特定角色（权限）</block>
+  <block id="b8da17ea9f82689a4cc87ac02b337328" category="list-text">为用于向 Google 进行身份验证的服务帐户创建并下载密钥对</block>
+  <block id="ab6fcc124e86604f6bab5da13aaea51a" category="inline-link">转到服务帐户页面</block>
+  <block id="7dc4b63dc4834aecd751b91ed3de3d39" category="list-text">在 Google Cloud 控制台中，<block ref="72863ecd427c906452e0c3d21111bdac" category="inline-link-rx"></block>。</block>
+  <block id="e4ca5adc5a86c098ce9d6bd2f42dc178" category="list-text">单击 * 选择一个项目 * ，选择您的项目，然后单击 * 打开 * 。</block>
+  <block id="bdac2dc9c1216cbabea4f0c3c6dbd7eb" category="list-text">单击 * 创建服务帐户 * 。</block>
+  <block id="81c36eb6a7aa6110855ae09fd80381ab" category="list-text">输入服务帐户名称（友好显示名称）和问题描述。</block>
+  <block id="66335d9ae4276106da10a758c0c3c8b7" category="paragraph">Cloud Console 会根据此名称生成服务帐户 ID 。根据需要编辑 ID —您不能稍后更改此 ID 。</block>
+  <block id="8971b16610cb4efa4b6c83e3ad176094" category="list-text">要立即设置访问控制，请单击页面底部的 * 创建 * ，然后单击 * 完成 * ，继续执行下一步。</block>
+  <block id="4bd66ea95ac91bc82cdc097c3614f96c" category="list-text">在 _IAM 页面中，单击 * 添加 * 并填写 _ 添加成员 _ 页面中的字段：</block>
+  <block id="91193149b6c0dbfe2760ec8c62b016e7" category="list-text">在 New Members 字段中，输入完整的服务帐户 ID ，例如 user1-service-account-cvs@project1.iam.gserviceaccount.com 。</block>
+  <block id="e6915ea331526f7f3221d5b019733157" category="list-text">添加以下角色：</block>
+  <block id="ea34dd9c3c884049d43a2ee08126a1e2" category="list-text">_NetApp Cloud Volumes Admin_</block>
+  <block id="a69f1e2412a22a1f3153b3553fb2a1d1" category="list-text">计算网络查看器 _</block>
+  <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">单击 * 保存 * 。</block>
+  <block id="1baa368f450d37450a1cb47c6b7dd320" category="list-text">单击服务帐户名称，然后从 _Service 帐户详细信息 _ 页面中，单击 * 添加密钥 &gt; 创建新密钥 * 。</block>
+  <block id="744132d4bfa3718f3315f6d3187cba60" category="list-text">选择 * JSON* 作为密钥类型，然后单击 * 创建 * 。</block>
+  <block id="ef17d662e8cfc44a88102effe9136080" category="paragraph">单击 * 创建 * 将生成新的公共 / 私有密钥对并将其下载到系统中。它是私钥的唯一副本。请安全地存储此文件，因为它可用于作为您的服务帐户进行身份验证。</block>
+  <block id="0eff7de92af8c65ac32bf20be9393a92" category="paragraph">有关详细步骤，请参见 Google Cloud 文档：</block>
+  <block id="7ef475b3aa654a4c77b576b7b693b979" category="inline-link-macro">创建和管理服务帐户</block>
+  <block id="fc4ab4403cd96c67fe73442b8080f683" category="list-text"><block ref="fc4ab4403cd96c67fe73442b8080f683" category="inline-link-macro-rx"></block></block>
+  <block id="b666e33c85ae74bc39da9e25479b2d5b" category="inline-link-macro">授予，更改和撤消对资源的访问权限</block>
+  <block id="543336bbad88b5d4f6aab813afbcd38f" category="list-text"><block ref="543336bbad88b5d4f6aab813afbcd38f" category="inline-link-macro-rx"></block></block>
+  <block id="17337f696c024b9e31f4396f97e2d0b0" category="inline-link-macro">创建和管理服务帐户密钥</block>
+  <block id="29d3428cb13e4cac2f40807938da5dc8" category="list-text"><block ref="29d3428cb13e4cac2f40807938da5dc8" category="inline-link-macro-rx"></block></block>
+  <block id="83472337cbb57099afa660a35a9c3772" category="summary">您可以根据存储需求的变化管理现有卷。您可以查看，编辑，还原和删除卷。</block>
+  <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">管理现有卷</block>
+  <block id="51c267e93c101971f1edda68c933c864" category="list-text">将鼠标悬停在卷上。</block>
+  <block id="f102d2437687d23a5ac4fb68ea34668f" category="inline-image-macro">卷悬停菜单的屏幕截图，可用于执行卷任务</block>
+  <block id="12618a0cf16fe919277e98ec9d44a180" category="paragraph"><block ref="12618a0cf16fe919277e98ec9d44a180" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="75ab567efb1db447b59b0343c1a2ceb3" category="list-text">管理卷：</block>
+  <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">任务</block>
+  <block id="004bf6c9a40003140292e97330236c53" category="cell">Action</block>
+  <block id="289d57ca7886b8016f08f4d17ad68a55" category="cell">查看有关卷的信息</block>
+  <block id="1a75d1d5ebc6d526f309bba66a6b717c" category="cell">单击 * 信息 * 。</block>
+  <block id="a262a83ffe24815a6e18b8655e7c9d3c" category="cell">编辑卷（包括快照策略）</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
+  <block id="4a1938d0e423380a1497b6177cf5dc1c" category="list-text">单击 * 编辑 * 。</block>
+  <block id="13f2f059150e745212f31d522267cd21" category="list-text">修改卷的属性，然后单击 * 更新 * 。</block>
+  <block id="57ad6d7575a56679decf17fe96fcf1d0" category="cell">获取 nfs 或 smb mount 命令</block>
+  <block id="ae21b5c5fb2e9febee97efa2eb6b9285" category="list-text">单击 * 挂载卷 * 。</block>
+  <block id="8f636e3ecab79b837953c9b370f79329" category="list-text">单击 * 复制 * 以复制命令。</block>
+  <block id="7037507985b932c715517fcf78ae11e3" category="cell">按需创建 Snapshot 副本</block>
+  <block id="24f7235ff22dc3892828c08842e689a8" category="list-text">单击 * 创建 Snapshot 副本 * 。</block>
+  <block id="4e421f73920c619b2a88e35f954c3429" category="list-text">根据需要更改名称，然后单击 * 创建 * 。</block>
+  <block id="f8e9baca287188400b353f0fe39c789e" category="cell">将卷替换为 Snapshot 副本的内容</block>
+  <block id="e837b92d7195c8af36a1e16d5b98647e" category="list-text">单击 * 将卷还原到 Snapshot* 。</block>
+  <block id="5eb4305250870db39b1ce1fef395849e" category="list-text">选择一个 Snapshot 副本，然后单击 * 还原 * 。</block>
+  <block id="7b364050ccd47e83ca87e25526786072" category="cell">删除 Snapshot 副本</block>
+  <block id="7e026074df0bbceb5332d6d0fcfff97d" category="list-text">单击 * 删除 Snapshot 副本 * 。</block>
+  <block id="00a6e5d778d81fd35251dad7b72cbd9c" category="list-text">选择快照并单击 * 删除 * 。</block>
+  <block id="17261ee2157a48b4bfa8bffabc397f40" category="list-text">当系统提示您确认时，再次单击 * 删除 * 。</block>
+  <block id="8e9a64bda9d21f945b6489df2e7946e1" category="cell">删除卷</block>
+  <block id="e7d176ac7539a52a08943f65ecc19e32" category="list-text">从所有客户端卸载卷：</block>
+  <block id="23394565644d9607267c2577190c4654" category="list-text">在 Linux 客户端上，使用 `umount` 命令。</block>
+  <block id="b70c71384dfeac0e536c343872f2fb55" category="list-text">在 Windows 客户端上，单击 * 断开网络驱动器 * 。</block>
+  <block id="150cd3111dfd7ae68aaeb429e7e50847" category="list-text">选择一个卷，然后单击 * 删除 * 。</block>
+  <block id="a87e9e2d6f69725c3669d99fad70371d" category="list-text">再次单击 * 删除 * 进行确认。</block>
+  <block id="5b049ba81786d3cb662b3737cb8dbf9d" category="summary">借助适用于 Google Cloud 的 NetApp Cloud Volumes Service ，您可以快速添加多协议工作负载，以及构建和部署基于 Windows 和基于 UNIX 的应用程序。</block>
+  <block id="e946962d2bea46b9a982a912efacd934" category="doc">了解适用于 Google Cloud 的 Cloud Volumes Service</block>
+  <block id="be01a357ae2c9752875b5385c732b017" category="section-title">主要功能：</block>
+  <block id="23b980511a5ced3b4103908bdb170f43" category="list-text">在内部部署和 Google Cloud 之间迁移数据。</block>
+  <block id="97672826879203835fb8d5d5635b629f" category="list-text">只需几秒钟即可配置 1 到 100 TiB 的卷。</block>
+  <block id="684d4a33eb829a2bc82fd1070b5a3d1e" category="list-text">多协议支持（您可以创建 NFS 或 SMB 卷）。</block>
+  <block id="7ae2f6cdaa02d5b8678d14f3f489a073" category="list-text">利用高效的自动化快照保护数据。</block>
+  <block id="17872268d34a8da9354d5922e34fce78" category="list-text">通过快速克隆加快应用程序开发速度。</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
+  <block id="251d0a3ac74b0cb370e4a290d007e109" category="paragraph">Cloud Volumes Service for Google Cloud 创建的卷将计入您的服务订阅费用，而不是通过 Cloud Manager 收取费用。</block>
+  <block id="f200eca2e2bf55c13ad2668dfdc87204" category="paragraph">从 Cloud Manager 发现适用于 Google Cloud 的 Cloud Volumes Service 区域或卷不收取任何费用。</block>
+  <block id="bf3796a4651f53d9a137d45e05610b30" category="inline-link-macro">在 Google Cloud Marketplace 中查看定价</block>
+  <block id="8e1046c4123260638fe451866f95441f" category="paragraph"><block ref="8e1046c4123260638fe451866f95441f" category="inline-link-macro-rx"></block></block>
+  <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">支持的区域</block>
+  <block id="b781da83c6614728483efd98a6c45ff6" category="inline-link-macro">查看支持的 Google Cloud 区域</block>
+  <block id="289503068ec55e9bb2927b20b2944861" category="paragraph"><block ref="289503068ec55e9bb2927b20b2944861" category="inline-link-macro-rx"></block></block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">开始之前</block>
+  <block id="ba1ec04f6bf2ff4dcb3909ab4182292d" category="inline-link">NetApp Cloud Volumes Service for Google Cloud 文档</block>
+  <block id="3e3b8b12f3052c6c4f7e3e489f336477" category="paragraph">Cloud Manager 可以发现现有的 Cloud Volumes Service for GCP 订阅和卷。请参见<block ref="8cef80fbd20b45fcd51e638492e90799" category="inline-link-rx"></block> 如果您尚未设置订阅。</block>
+  <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">获取帮助</block>
+  <block id="44812774d63355a78e8078a40c0b3218" category="paragraph">有关 Cloud Manager 中 Cloud Volumes Service 操作的一般问题，请使用 Cloud Manager 聊天工具。</block>
+  <block id="10f5b4e8583801dbea2ede6fbb4e4ae4" category="paragraph">有关适用于 Google Cloud 的 Cloud Volumes Service 的一般问题，请发送电子邮件至 NetApp 的 Google Cloud 团队： gcinfo@netapp.com 。</block>
+  <block id="bd32907910f13f745e4c4ad31b8b85f3" category="inline-link-macro">获取支持</block>
+  <block id="8ce70b43ef3817ffad1e3c9c2e6eb7fe" category="paragraph">对于与云卷相关的技术问题，您可以从 Google Cloud Console 创建技术支持案例。请参见 <block ref="1229b64310846c261ec2fb9cb0c3c4af" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="section-title">相关链接</block>
+  <block id="8f27ddb27510b2f60749b9cc933bb52c" category="inline-link">NetApp Cloud Central ：适用于 Google Cloud 的 Cloud Volumes Service</block>
+  <block id="b3a639154f19df26c3f5d0646c183067" category="list-text"><block ref="b3a639154f19df26c3f5d0646c183067" category="inline-link-rx"></block></block>
+  <block id="4025377504ab93e000f14fb259cf7ed8" category="list-text"><block ref="4025377504ab93e000f14fb259cf7ed8" category="inline-link-rx"></block></block>
+  <block id="547aa8c8440b20c20efd24ce745a278e" category="summary">了解 Cloud Manager 中适用于 Google Cloud 的 Cloud Volumes Service 的新增功能。</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
+  <block id="a7c7ddf55dc49cf2e6226c52c30d52c2" category="section-title">2020 年 9 月 9 日</block>
+  <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">支持适用于 Google Cloud 的 Cloud Volumes Service</block>
+  <block id="9e376b2341c224a05e31bf464f6a9a2c" category="paragraph">现在，您可以直接从 Cloud Manager 管理适用于 Google Cloud 的 Cloud Volumes Service ：</block>
+  <block id="69a622f3bb660c4a470d3d96f19e20be" category="list-text">设置和创建工作环境</block>
+  <block id="bd596d5c57d76a146d26208cd81913fb" category="list-text">为 Linux 和 UNIX 客户端创建和管理 NFSv3 和 NFSv4.1 卷</block>
+  <block id="104e3ba4c577e4723ae2db3aaab91044" category="list-text">为 Windows 客户端创建和管理 SMB 3.x 卷</block>
+  <block id="f3f6d908876888ed386cf496a0f26e7c" category="list-text">创建，删除和还原卷快照</block>
+  <block id="1110fd6ec9eee21c0b646be4552ca0e0" category="summary">您可以通过 Cloud Manager 根据 Cloud Volumes Service for Google Cloud 订阅创建云卷。创建卷后，获取相关的挂载命令，以便将卷挂载到客户端。</block>
+  <block id="9be5a2eae9bab39aee7d0161c137cd43" category="doc">创建并挂载卷</block>
+  <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">创建卷</block>
+  <block id="0083dcd597da7bd592240dc28b767d85" category="paragraph">您可以在新的或现有的 Cloud Volumes Service for Google Cloud 帐户中创建 NFS 或 SMB 卷。云卷当前支持适用于 Linux 和 UNIX 客户端的 NFSv3 和 NFSv4.1 ，以及适用于 Windows 客户端的 SMB 3.x 。</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
+  <block id="ce18c1db074bb9e5c1d0abfee30e098f" category="list-text">如果要在 GCP 中使用 SMB 、则必须设置 DNS 和 Active Directory 。</block>
+  <block id="f153caba90fc4134024f9b4c3eeadea8" category="list-text">在计划创建 SMB 卷时，您必须具有可连接到的 Windows Active Directory 服务器。您将在创建卷时输入此信息。此外，请确保管理员用户能够在指定的组织单位（ OU ）路径中创建计算机帐户。</block>
+  <block id="3a9d2e9f2ef6e95de617c14d2e4a4ef4" category="list-text">选择工作环境，然后单击 * 添加新卷 * 。</block>
+  <block id="a88cc7492eb95c6a27a508257cb9c7d3" category="list-text">在详细信息和位置页面中，输入有关卷的详细信息：</block>
+  <block id="0dcbdc7a88267f1af3dfbb016b0e988b" category="list-text">输入卷的名称。</block>
+  <block id="0aa26752c8275d7c2136cfa844d9bed7" category="list-text">指定一个介于 1 TiB （ 1024 GiB ）到 100 TiB 范围内的大小。</block>
+  <block id="18f39858c9507476f461154189c305ce" category="inline-link-macro">了解有关已分配容量的更多信息</block>
+  <block id="8499bf1a4d0783e1946d0183d50b1a5e" category="paragraph"><block ref="1fccff2dc87880e023e422db2a91ac16" category="inline-link-macro-rx"></block>。</block>
+  <block id="d5d2b1f89ce09d0f5810f56209020adc" category="list-text">指定服务级别：标准，高级或极速。</block>
+  <block id="4de85cc4f312ff19184ba3b85367874c" category="inline-link-macro">了解有关服务级别的更多信息</block>
+  <block id="06caf620f227e374f23ebcbd61a320c1" category="paragraph"><block ref="4a30f1eccd0eaf46b75e9787d1a9dd0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="b120226bff5ab9d91c0335fcef4d25a9" category="list-text">选择 Google Cloud 区域。</block>
+  <block id="0ad33c22b0bf62f904c40c679ed4bb71" category="list-text">选择要从中访问卷的 VPC 网络。请注意，创建卷后，无法更改或编辑 VPC 。</block>
+  <block id="26983a904e0717c520032a2178795368" category="list-text">单击 * 继续 * 。</block>
+  <block id="e779fbfdff90085c8a49c2e711c97ce8" category="inline-image-macro">卷详细信息页面的屏幕截图，您可以在其中提供名称，大小和服务级别</block>
+  <block id="a7bcef8a07fad7a86f89afe7cb9eec70" category="paragraph"><block ref="a7bcef8a07fad7a86f89afe7cb9eec70" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0625bfce4701fe75801416f87ede7b10" category="list-text">在协议页面中，选择 NFS 或 SMB ，然后定义详细信息。NFS 和 SMB 所需的条目将在下面的不同部分中显示。</block>
+  <block id="547a5c5cf72eabae707b477139de2cdd" category="list-text">对于 NFS ：</block>
+  <block id="d21a4fe6a8f6a1dfa8736389d4c3476d" category="list-text">在卷路径字段中，指定挂载卷时将看到的卷导出的名称。</block>
+  <block id="25f87b20d982949ec8e3e27d03474ba6" category="list-text">根据您的要求选择 NFSv3 和 / 或 NFSv4.1 。</block>
+  <block id="971b53e8e70edb4bd2dc46c1e9a5f83b" category="list-text">或者，您也可以创建导出策略来确定可以访问卷的客户端。指定：</block>
+  <block id="264754e31d1ff52cdc5aaf133afec15f" category="list-text">使用 IP 地址或无类别域间路由（ CIDR ）允许的客户端。</block>
+  <block id="afbfc1582fb1f428d3810c815dfcc309" category="list-text">访问权限为 " 读写 " 或 " 只读 " 。</block>
+  <block id="4ab55a4fa374ed23333000e2528f27ae" category="list-text">用户使用的访问协议（如果卷同时允许 NFSv3 和 NFSv4.1 访问，则为协议）。</block>
+  <block id="c2e80b269feea5b55611a060d02af36b" category="list-text">如果要定义其他导出策略规则，请单击 * + 添加导出策略规则 * 。</block>
+  <block id="7f705955c40fe9715fd0b0beafc53e4d" category="paragraph">下图显示了已填写 NFS 协议的卷页面：</block>
+  <block id="7d060f160067a6298515896b28afec14" category="inline-image-macro">一个屏幕截图，显示为 NFS Cloud Volumes Service 卷填写的卷页面。</block>
+  <block id="872560fbd3d800dab72db585b9f3c935" category="paragraph"><block ref="872560fbd3d800dab72db585b9f3c935" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9558b14c9d59086685b161678bbd5ba3" category="list-text">对于 SMB ：</block>
+  <block id="f3ef9426887f3b6d3605f31188680f8d" category="list-text">在卷路径字段中，指定挂载卷时将看到的卷导出名称，然后单击 * 继续 * 。</block>
+  <block id="cd151d721b267c3372dae8aa90bea7b0" category="list-text">如果已设置 Active Directory ，您将看到配置。如果此卷是要设置的第一个卷，并且尚未设置 Active Directory ，则可以在 "SMB 连接设置 " 页面中启用 SMB 会话加密：</block>
+  <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">字段</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
+  <block id="9d35762d6cb446294ba4226fba0d1eb5" category="cell">DNS 主 IP 地址</block>
+  <block id="af76d053440af0abdccb0ad361f41e55" category="cell">为 SMB 服务器提供名称解析的 DNS 服务器的 IP 地址。引用多个服务器时，请使用逗号分隔 IP 地址，例如 172.31.25.223 ， 172.31.2.74 。</block>
+  <block id="b4a5aaff47ac1aad0a039f0089aac0c6" category="cell">要加入的 Active Directory 域</block>
+  <block id="c6d55f531a77e880997000897f943785" category="cell">您希望 SMB 服务器加入的 Active Directory （ AD ）域的 FQDN 。</block>
+  <block id="bb78cf486f48b949ec20d57c3b4b3570" category="cell">SMB 服务器 NetBIOS 名称</block>
+  <block id="5edfee54ded2748effdab7c474ec6077" category="cell">要创建的 SMB 服务器的 NetBIOS 名称。</block>
+  <block id="a3bbc956ff81e28dd77efaaf4d1c5b30" category="cell">授权加入域的凭据</block>
+  <block id="03fa572f48ef7f33b022f609e0553e85" category="cell">具有足够权限将计算机添加到 AD 域中指定组织单位 (OU) 的 Windows 帐户的名称和密码。</block>
+  <block id="ff309cf3107765153856990e03224d8c" category="cell">组织单位</block>
+  <block id="88f4674929f3577e4ed6ca0ce26d6c95" category="cell">AD 域中要与 SMB 服务器关联的组织单元。默认值为 CN=Computers ，用于连接到您自己的 Windows Active Directory 服务器。</block>
+  <block id="03e6e06b082c189fc87ad9aad3901032" category="paragraph">下图显示了已填写 SMB 协议的卷页面：</block>
+  <block id="a69750d79ae32373cb26af4d76eee484" category="inline-image-macro">一个屏幕截图，显示为 SMB Cloud Volumes Service 卷填写的卷页面。</block>
+  <block id="396a17f0ed51b9c5c6e2c2d382b9da29" category="paragraph"><block ref="396a17f0ed51b9c5c6e2c2d382b9da29" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="14ec8544f74cfa351aff62abf80e7ce1" category="list-text">如果要基于现有卷的快照创建卷，请从 Snapshot 名称下拉列表中选择该快照。否则，只需单击 * 继续 * 。</block>
+  <block id="a09c1495afba572d0857c83823cd2bad" category="list-text">在 "Snapshot 策略 " 页面中，您可以启用 Cloud Volumes Service 以根据计划为卷创建 Snapshot 副本。此时，您可以通过将选择器移至右侧来执行此操作，也可以稍后编辑卷以定义快照策略。</block>
+  <block id="ba33208e705836c12b7e1e6e2fa6b492" category="inline-link-macro">创建快照策略</block>
+  <block id="7235c4b075858250025ea5e2846d9c56" category="paragraph">请参见 <block ref="bb3b670ab2c393f994b7ce337a4620ef" category="inline-link-macro-rx"></block> 有关快照功能的详细信息。</block>
+  <block id="5e65e2e51d0d291499a42f54730e645c" category="list-text">单击 * 添加卷 * 。</block>
+  <block id="45dbe3c136df615d693b80183c277a3b" category="paragraph">此时，新卷将添加到工作环境中。</block>
+  <block id="a619b30d8586f1269f45bac77eca7781" category="paragraph">继续 <block ref="c1cfc9c0a0127f96cabac57cf381c0f1" category="inline-link-macro-rx"></block>。</block>
+  <block id="45bb1e3eab26b4479c1c1d8bdd6bf2f5" category="section-title">挂载云卷</block>
+  <block id="86a3efaabfd178d684bcd98f4cd6434c" category="paragraph">从 Cloud Manager 中访问挂载说明，以便将卷挂载到主机。</block>
+  <block id="b80e741400898b02fa02ae6451578a24" category="admonition">使用客户端支持的突出显示的协议 / 拨号。</block>
+  <block id="231483c3df5be28012c03a70cd182671" category="list-text">将鼠标悬停在卷上，然后单击 * 挂载卷 * 。</block>
+  <block id="dc994023cf3cc855f2ced6fe0993f129" category="paragraph">NFS 和 SMB 卷会显示该协议的挂载说明。</block>
+  <block id="ca9ddaf06b48350fa016d22a546b3160" category="list-text">将鼠标悬停在命令上并将其复制到剪贴板，以简化此过程。只需在命令末尾添加目标目录 / 挂载点即可。</block>
+  <block id="f8b7bb7f28d1f1a0e9534f8d8582d615" category="paragraph">* NFS 示例： *</block>
+  <block id="b814517054080fc81ee838a94a37bc18" category="inline-image-macro">NFS 卷的挂载说明</block>
+  <block id="5c81aee2de731ff9fc139e1be671e308" category="paragraph"><block ref="5c81aee2de731ff9fc139e1be671e308" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb3bef40f931522adf1b31bfb5ba4e1b" category="paragraph">`rsize` 和 `wsize` 选项定义的最大 I/O 大小为 1048576 ，但对于大多数使用情形，建议使用的默认值为 65536 。</block>
+  <block id="14207f0f4970c30af3f3b09bc26475c1" category="paragraph">请注意，除非使用 `veRS=&lt;NFS_version&gt;` 选项指定版本，否则 Linux 客户端将默认使用 NFSv4.1 。</block>
+  <block id="c33a261ec68784a847d41ccecc103bc1" category="paragraph">* SMB 示例： *</block>
+  <block id="dd92d715112689203a9d21e0c4638b23" category="inline-image-macro">SMB 卷的挂载说明</block>
+  <block id="d837d9033dcef75be4b4e49cdbf1cd31" category="paragraph"><block ref="d837d9033dcef75be4b4e49cdbf1cd31" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d2db85ec3f1d935da0d928bd1abc4623" category="list-text">按照实例的挂载说明映射网络驱动器。</block>
+  <block id="8368ae9308b995fd5a75721d106d4ab0" category="paragraph">完成挂载说明中的步骤后，您已成功将云卷挂载到 GCP 实例。</block>
+  <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">NetApp 通过多种方式为 Cloud Manager 提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
+  <block id="7ccaf84febc0ed633fbdbadb8d488a7e" category="paragraph"><block ref="7ccaf84febc0ed633fbdbadb8d488a7e" category="inline-link-macro-rx"></block></block>
+  <block id="8f6f9937d2a2acb76e352fb5e9dfff19" category="summary">您可以从 Cloud Manager 中删除 Cloud Volumes Service for Google Cloud 订阅以及所有现有卷。这些卷不会被删除，而是刚刚从 Cloud Manager 界面中删除。</block>
+  <block id="ea4e50481c541cefaed626458af5901f" category="doc">从 Cloud Manager 中删除 Cloud Volumes Service</block>
+  <block id="b2639f031018ddb46e5517acac1b12ef" category="admonition">不支持从 Cloud Manager 中删除 Cloud Volumes Service for Google Cloud 订阅。您只能通过 Google Cloud Console 执行此操作。</block>
+  <block id="c723db2b353490931b5febeb5b3ec637" category="list-text">单击 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> 按钮，然后单击 * 删除 Cloud Volumes Service * 。</block>
+  <block id="d6781b097f0c80fef5a0f286b314592a" category="list-text">在确认对话框中，单击 * 删除 * 。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
+  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
+  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
+  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">有关 Cloud Manager 3.9 的注意事项</block>
+  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="paragraph"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
+  <block id="a1e613d4b9053de36bf30c8396728155" category="summary">在 Cloud Manager 中创建适用于 Google Cloud 的 Cloud Volumes Service 工作环境，以创建和管理卷和快照。</block>
+  <block id="5747722bb189495cdccebf12276e2ffd" category="doc">创建适用于 Google Cloud 的 Cloud Volumes Service 工作环境</block>
+  <block id="871267ec860c59e6022484041d4d960e" category="paragraph">在 Cloud Manager 中创建适用于 Google Cloud 的 Cloud Volumes Service 工作环境，以便创建和管理卷和快照。</block>
+  <block id="4dd9c591139d8d343bfac0ba8317d5ab" category="paragraph">无论您是已从 Google Cloud Console 创建卷，还是刚刚注册了适用于 Google Cloud 的 Cloud Volumes Service 且尚未创建卷，第一步都是根据您的 GCP 订阅为卷创建一个工作环境。</block>
+  <block id="e3c3a0b2e9bccb0ed0678e6d2b6e5101" category="paragraph">如果此订阅已存在云卷，则这些卷将显示在新的工作环境中。如果您尚未为 GCP 订阅添加任何云卷，请在创建新的工作环境后执行此操作。</block>
+  <block id="b7c67692dc38dca98edc62b4b29f83d8" category="admonition">如果您在多个 Google Cloud 项目中拥有订阅和卷，则需要对每个项目执行此任务。</block>
+  <block id="107a414e0bf62dc36bb6bbde7bcd19de" category="paragraph">为每个项目添加订阅时，您必须具有以下信息：</block>
+  <block id="61d55eb42b926e824d916fc29d4b2127" category="list-text">服务帐户凭据（您下载的 JSON 专用密钥）</block>
+  <block id="7adea0d9c77aabccd8bb67ae0a832d59" category="list-text">项目名称</block>
+  <block id="8160c66171203c7c10750b51088251a8" category="list-text">在 Cloud Manager 中，添加一个新的工作环境，选择位置 * Google Cloud* ，然后单击 * 继续 * 。</block>
+  <block id="5437257338a1645396ca701fba74ee19" category="list-text">选择 * Cloud Volumes Service * 并单击 * 继续 * 。</block>
+  <block id="68aa8fd14019bf80c98f197ea78d6acc" category="inline-image-macro">为 Cloud Volumes Service for GCP 订阅添加工作环境的屏幕截图。</block>
+  <block id="e407814ff6ab4fb1b63ad38464f53b73" category="paragraph"><block ref="e407814ff6ab4fb1b63ad38464f53b73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9080d954a7c1febdfca0a4458cd577b0" category="list-text">提供有关 Cloud Volumes Service 订阅的信息：</block>
+  <block id="5a341ba1dd9ba8680efd382c4f5778ad" category="list-text">输入要使用的工作环境名称。</block>
+  <block id="56bab707c78784ba9b87a1e53b01fb02" category="list-text">复制 / 粘贴您在上述步骤中下载的 JSON 专用密钥。</block>
+  <block id="98061d4b41ea7e9a2f4ca7bbd84f29b8" category="list-text">选择 Google Cloud 项目的名称。</block>
+  <block id="756fe8c276796e025f6186df6fad79f9" category="inline-image-macro">为 Cloud Volumes Service for GCP 订阅添加凭据的屏幕截图。</block>
+  <block id="9abb056391b209b3886860757a68afa6" category="paragraph"><block ref="9abb056391b209b3886860757a68afa6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d1536678830c26f77ea3d432c63adbd6" category="paragraph">Cloud Manager 可显示适用于 Google Cloud 的 Cloud Volumes Service 工作环境。</block>
+  <block id="9940ae9ac5b6e6e70ab66bca7f76d51f" category="inline-image-macro">Cloud Volumes Service for Google Cloud 工作环境的屏幕截图。</block>
+  <block id="9e4d57614250697869bda0f9844b2597" category="paragraph"><block ref="9e4d57614250697869bda0f9844b2597" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a9e28288f987d2aa7cac4c83ef241dd" category="paragraph">如果此订阅已存在云卷，则这些卷将显示在新的工作环境中。您可以从 Cloud Manager 添加其他云卷。</block>
+  <block id="a1f2a018efc72b6fcf1f805684b3c31a" category="paragraph">如果此订阅不存在任何云卷，请立即创建。</block>
+  <block id="3d0356467ac23a5028ee4d6562d2ec45" category="inline-link-macro">开始创建卷</block>
+  <block id="0ddd57362a29de92618e7d7d2bbf5cd4" category="paragraph"><block ref="8d370122f83467764fea492e485dddbb" category="inline-link-macro-rx"></block>。</block>
+  <block id="98d397091057eb9a16b0fe981b3ad815" category="summary">NetApp Cloud Volumes Service for Google Cloud 是一种集成文件服务，具有高级数据管理功能，可提供在云中迁移和运行企业工作负载所需的性能，可用性和安全性。这些文档介绍了如何使用 NetApp Cloud Manager 管理适用于 Google Cloud 的 Cloud Volumes Service 。</block>
+  <block id="c164c685163f0ac5277f4c117b8c9c2c" category="doc">Cloud Volumes Service for Google Cloud 文档</block>
+  <block id="07412ee3cf29f80fadf8fe52f687e709" category="summary">如果更改了 DNS 服务器或 Active Directory 域，则需要在 Cloud Volumes Service 中修改 SMB 服务器，以便它可以继续为客户端提供存储。</block>
+  <block id="cfc8683315c11129a14f7b806a6f699c" category="doc">管理 Active Directory 配置</block>
+  <block id="69911db82cd6ce5dc7c63d1b33420f3b" category="list-text">单击 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> 按钮，然后单击 * 管理 Active Directory* 。</block>
+  <block id="6009cb4ef9aecc48bb7af9c3b4fb92ad" category="paragraph">如果未配置 Active Directory ，则可以立即添加一个。如果配置了一个，则可以使用修改或删除设置 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
+  <block id="fd1f3b127eeb96862e4cde53a7ee6267" category="list-text">指定 SMB 服务器的设置：</block>
+  <block id="c1ca298a9a9c76ca22ecf23ccaca6448" category="cell">为 SMB 服务器提供名称解析的 DNS 服务器的 IP 地址。引用多个服务器时，请使用逗号分隔 IP 地址，例如 172.31.25.223 ， 172.31.2.74 。</block>
+  <block id="4bc62575e91aa40d329c1383c7a4fc46" category="list-text">单击 * 保存 * 以保存设置。</block>
+  <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
+  <block id="d53e2559d6ace0e907fc57192bf286b6" category="paragraph"><block ref="d53e2559d6ace0e907fc57192bf286b6" category="inline-link-macro-rx"></block></block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
+  <block id="bf5d97d0f930d16c4814a56d0ffddf42" category="sidebar">适用于 Google Cloud 的 Cloud Volumes Service 文档</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入门</block>
+  <block id="edbcf53081d21cc9d84e0c1b1c31c425" category="sidebar">创建工作环境</block>
+  <block id="281fd4ddeb5136e8243177da6481be31" category="sidebar">使用适用于 Google Cloud 的 Cloud Volumes Service</block>
+  <block id="97303bb797c628e0c8d96db52408999b" category="sidebar">删除 Cloud Volumes Service</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
+  <block id="82b59bce9fad57d86901f928d5fef6d3" category="sidebar">管理云快照</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
+  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+</blocks>

@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: task-manage-active-directory.html 
+keywords: active directory, dns, domain, dns servers, smb server 
+summary: 如果更改了 DNS 服务器或 Active Directory 域，则需要在 Cloud Volumes Service 中修改 SMB 服务器，以便它可以继续为客户端提供存储。 
+---
+= 管理 Active Directory 配置
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果更改了 DNS 服务器或 Active Directory 域，则需要在 Cloud Volumes Service 中修改 SMB 服务器，以便它可以继续为客户端提供存储。
+
+.步骤
+. 打开工作环境。
+. 单击 image:screenshot_gallery_options.gif[""] 按钮，然后单击 * 管理 Active Directory* 。
++
+如果未配置 Active Directory ，则可以立即添加一个。如果配置了一个，则可以使用修改或删除设置 image:screenshot_gallery_options.gif[""] 按钮。
+
+. 指定 SMB 服务器的设置：
++
+[cols="25,75"]
+|===
+| 字段 | Description 
+
+
+| DNS 主 IP 地址 | 为 SMB 服务器提供名称解析的 DNS 服务器的 IP 地址。引用多个服务器时，请使用逗号分隔 IP 地址，例如 172.31.25.223 ， 172.31.2.74 。 
+
+
+| 要加入的 Active Directory 域 | 您希望 SMB 服务器加入的 Active Directory （ AD ）域的 FQDN 。 
+
+
+| SMB 服务器 NetBIOS 名称 | 要创建的 SMB 服务器的 NetBIOS 名称。 
+
+
+| 授权加入域的凭据 | 具有足够权限将计算机添加到 AD 域中指定组织单位 (OU) 的 Windows 帐户的名称和密码。 
+
+
+| 组织单位 | AD 域中要与 SMB 服务器关联的组织单元。默认值为 CN=Computers ，用于连接到您自己的 Windows Active Directory 服务器。 
+|===
+. 单击 * 保存 * 以保存设置。
+

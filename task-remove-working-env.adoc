@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: task-remove-working-env.html 
+keywords: remove working environment, delete working environment, remove cloud volumes service, remove, delete 
+summary: 您可以从 Cloud Manager 中删除 Cloud Volumes Service for Google Cloud 订阅以及所有现有卷。这些卷不会被删除，而是刚刚从 Cloud Manager 界面中删除。 
+---
+= 从 Cloud Manager 中删除 Cloud Volumes Service
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从 Cloud Manager 中删除 Cloud Volumes Service for Google Cloud 订阅以及所有现有卷。这些卷不会被删除，而是刚刚从 Cloud Manager 界面中删除。
+
+
+TIP: 不支持从 Cloud Manager 中删除 Cloud Volumes Service for Google Cloud 订阅。您只能通过 Google Cloud Console 执行此操作。
+
+.步骤
+. 打开工作环境。
+. 单击 image:screenshot_gallery_options.gif[""] 按钮，然后单击 * 删除 Cloud Volumes Service * 。
+. 在确认对话框中，单击 * 删除 * 。
+
