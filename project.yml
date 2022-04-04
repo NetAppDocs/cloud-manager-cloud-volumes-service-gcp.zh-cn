@@ -54,11 +54,11 @@ homepage:
       url: concept-cvs-gcp.html
     - title: 快速入门
       url: task-quick-start.html
-  - title: 使用适用于 Google Cloud 的 Cloud Volumes Service
+  - title: 使用 Cloud Volumes Service
     links:
     - title: 创建卷
       url: task-create-volumes.html
-    - title: 管理云快照
+    - title: 管理云卷快照
       url: task-manage-snapshots.html
   - title: 博客社区
     links:

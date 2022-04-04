@@ -295,9 +295,9 @@
   <block id="281fd4ddeb5136e8243177da6481be31" category="sidebar">使用适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="97303bb797c628e0c8d96db52408999b" category="sidebar">删除 Cloud Volumes Service</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
-  <block id="82b59bce9fad57d86901f928d5fef6d3" category="sidebar">管理云快照</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+  <block id="b2926ec1332a3412430ef48cae1f9bc2" category="sidebar">使用 Cloud Volumes Service</block>
 </blocks>
