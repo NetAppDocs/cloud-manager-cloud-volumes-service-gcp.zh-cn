@@ -6,6 +6,7 @@ summary: 按照以下步骤快速入门，或访问链接以获取完整详细�
 ---
 = Cloud Volumes Service for Google Cloud 快速入门
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 您可以通过 Cloud Manager 根据 Cloud Volumes Service for Google C
 ---
 = 创建并挂载卷
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 在 Cloud Manager 中创建适用于 Google Cloud 的 Cloud Volumes Ser
 ---
 = 创建适用于 Google Cloud 的 Cloud Volumes Service 工作环境
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

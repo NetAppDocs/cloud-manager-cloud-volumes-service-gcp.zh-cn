@@ -6,6 +6,7 @@ summary: 您可以从 Cloud Manager 中删除 Cloud Volumes Service for Google C
 ---
 = 从 Cloud Manager 中删除 Cloud Volumes Service
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

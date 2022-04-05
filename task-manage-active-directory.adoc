@@ -6,6 +6,7 @@ summary: 如果更改了 DNS 服务器或 Active Directory 域，则需要在 Cl
 ---
 = 管理 Active Directory 配置
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

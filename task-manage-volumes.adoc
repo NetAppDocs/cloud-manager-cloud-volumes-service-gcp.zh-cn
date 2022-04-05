@@ -6,6 +6,7 @@ summary: 您可以根据存储需求的变化管理现有卷。您可以查看�
 ---
 = 管理现有卷
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

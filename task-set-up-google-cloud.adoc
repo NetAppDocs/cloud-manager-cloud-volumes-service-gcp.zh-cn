@@ -6,6 +6,7 @@ summary: Cloud Manager 需要通过 Google 云服务帐户访问 Cloud Volumes S
 ---
 = 设置 Google Cloud
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

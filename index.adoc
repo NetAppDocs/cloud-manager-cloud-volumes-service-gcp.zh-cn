@@ -7,6 +7,7 @@ summary: NetApp Cloud Volumes Service for Google Cloud 是一种集成文件服�
 ---
 = Cloud Volumes Service for Google Cloud 文档
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
