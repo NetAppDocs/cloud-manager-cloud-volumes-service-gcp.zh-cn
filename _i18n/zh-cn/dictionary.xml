@@ -154,7 +154,6 @@
   <block id="4025377504ab93e000f14fb259cf7ed8" category="list-text"><block ref="4025377504ab93e000f14fb259cf7ed8" category="inline-link-rx"></block></block>
   <block id="547aa8c8440b20c20efd24ce745a278e" category="summary">了解 Cloud Manager 中适用于 Google Cloud 的 Cloud Volumes Service 的新增功能。</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
-  <block id="a7c7ddf55dc49cf2e6226c52c30d52c2" category="section-title">2020 年 9 月 9 日</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">支持适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="9e376b2341c224a05e31bf464f6a9a2c" category="paragraph">现在，您可以直接从 Cloud Manager 管理适用于 Google Cloud 的 Cloud Volumes Service ：</block>
   <block id="69a622f3bb660c4a470d3d96f19e20be" category="list-text">设置和创建工作环境</block>
@@ -300,4 +299,5 @@
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="b2926ec1332a3412430ef48cae1f9bc2" category="sidebar">使用 Cloud Volumes Service</block>
+  <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020 年 9 月 9 日</block>
 </blocks>
