@@ -104,14 +104,14 @@ image:screenshot_cvs_smb_details.png["一个屏幕截图，显示为 SMB Cloud V
 . 如果要基于现有卷的快照创建卷，请从 Snapshot 名称下拉列表中选择该快照。否则，只需单击 * 继续 * 。
 . 在 "Snapshot 策略 " 页面中，您可以启用 Cloud Volumes Service 以根据计划为卷创建 Snapshot 副本。此时，您可以通过将选择器移至右侧来执行此操作，也可以稍后编辑卷以定义快照策略。
 +
-请参见 link:task-manage-cloud-volumes-gcp-snapshots.html#create_or_modify_a_snapshot_policy["创建快照策略"^] 有关快照功能的详细信息。
+了解操作方法 link:task-manage-snapshots.html["创建快照策略"]。
 
 . 单击 * 添加卷 * 。
 
 
 此时，新卷将添加到工作环境中。
 
-继续 link:task-manage-cvs-gcp.html#mount-the-cloud-volume["挂载云卷"]。
+继续挂载云卷。
 
 
 

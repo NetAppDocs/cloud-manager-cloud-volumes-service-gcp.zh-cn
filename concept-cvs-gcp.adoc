@@ -40,7 +40,7 @@ link:https://console.cloud.google.com/marketplace/product/endpoints/cloudvolumes
 
 == 支持的区域
 
-link:https://cloud.google.com/solutions/partners/netapp-cloud-volumes/regional-availability["查看支持的 Google Cloud 区域"^]
+https://cloud.netapp.com/cloud-volumes-global-regions#cvsGc["查看支持的 Google Cloud 区域"^]
 
 
 

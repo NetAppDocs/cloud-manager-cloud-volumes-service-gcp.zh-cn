@@ -139,7 +139,6 @@
   <block id="8e1046c4123260638fe451866f95441f" category="paragraph"><block ref="8e1046c4123260638fe451866f95441f" category="inline-link-macro-rx"></block></block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">支持的区域</block>
   <block id="b781da83c6614728483efd98a6c45ff6" category="inline-link-macro">查看支持的 Google Cloud 区域</block>
-  <block id="289503068ec55e9bb2927b20b2944861" category="paragraph"><block ref="289503068ec55e9bb2927b20b2944861" category="inline-link-macro-rx"></block></block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">开始之前</block>
   <block id="ba1ec04f6bf2ff4dcb3909ab4182292d" category="inline-link">NetApp Cloud Volumes Service for Google Cloud 文档</block>
   <block id="3e3b8b12f3052c6c4f7e3e489f336477" category="paragraph">Cloud Manager 可以发现现有的 Cloud Volumes Service for GCP 订阅和卷。请参见<block ref="8cef80fbd20b45fcd51e638492e90799" category="inline-link-rx"></block> 如果您尚未设置订阅。</block>
@@ -213,11 +212,8 @@
   <block id="396a17f0ed51b9c5c6e2c2d382b9da29" category="paragraph"><block ref="396a17f0ed51b9c5c6e2c2d382b9da29" category="inline-image-macro-rx" type="image"></block></block>
   <block id="14ec8544f74cfa351aff62abf80e7ce1" category="list-text">如果要基于现有卷的快照创建卷，请从 Snapshot 名称下拉列表中选择该快照。否则，只需单击 * 继续 * 。</block>
   <block id="a09c1495afba572d0857c83823cd2bad" category="list-text">在 "Snapshot 策略 " 页面中，您可以启用 Cloud Volumes Service 以根据计划为卷创建 Snapshot 副本。此时，您可以通过将选择器移至右侧来执行此操作，也可以稍后编辑卷以定义快照策略。</block>
-  <block id="ba33208e705836c12b7e1e6e2fa6b492" category="inline-link-macro">创建快照策略</block>
-  <block id="7235c4b075858250025ea5e2846d9c56" category="paragraph">请参见 <block ref="bb3b670ab2c393f994b7ce337a4620ef" category="inline-link-macro-rx"></block> 有关快照功能的详细信息。</block>
   <block id="5e65e2e51d0d291499a42f54730e645c" category="list-text">单击 * 添加卷 * 。</block>
   <block id="45dbe3c136df615d693b80183c277a3b" category="paragraph">此时，新卷将添加到工作环境中。</block>
-  <block id="a619b30d8586f1269f45bac77eca7781" category="paragraph">继续 <block ref="c1cfc9c0a0127f96cabac57cf381c0f1" category="inline-link-macro-rx"></block>。</block>
   <block id="45bb1e3eab26b4479c1c1d8bdd6bf2f5" category="section-title">挂载云卷</block>
   <block id="86a3efaabfd178d684bcd98f4cd6434c" category="paragraph">从 Cloud Manager 中访问挂载说明，以便将卷挂载到主机。</block>
   <block id="b80e741400898b02fa02ae6451578a24" category="admonition">使用客户端支持的突出显示的协议 / 拨号。</block>
@@ -300,4 +296,8 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="b2926ec1332a3412430ef48cae1f9bc2" category="sidebar">使用 Cloud Volumes Service</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020 年 9 月 9 日</block>
+  <block id="939e2552f14c2db1e32edf892141ef1f" category="paragraph"><block ref="939e2552f14c2db1e32edf892141ef1f" category="inline-link-rx"></block></block>
+  <block id="ced63c567878ed01730fce043c8ade96" category="inline-link-macro">创建快照策略</block>
+  <block id="e45bbeae66bd2af06ef994ec4e9682b9" category="paragraph">了解操作方法 <block ref="4733085e77073b15a79afc35f8d9b896" category="inline-link-macro-rx"></block>。</block>
+  <block id="0753d577f87c3ce7385e295a5cc23407" category="paragraph">继续挂载云卷。</block>
 </blocks>
